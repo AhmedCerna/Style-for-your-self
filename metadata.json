@@ -1,0 +1,6 @@
+{
+  "name": "Style For Yourself",
+  "description": "Premium modern online clothing and fashion store for Men and Women with luxury collections, interactive shop, cart, and instant mobile contact.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

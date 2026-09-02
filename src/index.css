@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", "Cormorant Garamond", Georgia, Cambria, serif;
+  --font-sans: "Inter", "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  --color-brand-dark: #1A1A1A;
+  --color-brand-charcoal: #262626;
+  --color-brand-cream: #FDFCFB;
+  --color-brand-sand: #F5F2EF;
+  --color-brand-border: #E5E1DA;
+  --color-brand-muted: #8C8279;
+  --color-brand-accent: #B38F5C;
+  --color-brand-accent-hover: #9E7B49;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+    background-color: #FDFCFB;
+    color: #1A1A1A;
+  }
+
+  /* Editorial custom subtle scrollbar */
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #FDFCFB;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #E5E1DA;
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #8C8279;
+  }
+}
+
+.accent-line {
+  height: 1px;
+  background: rgba(26, 26, 26, 0.1);
+  width: 100%;
+}
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
